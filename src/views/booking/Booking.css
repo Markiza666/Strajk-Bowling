@@ -1,0 +1,7 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+}
+.booking__button {
+  margin: 4rem 0 0.8rem 0;
+}/*# sourceMappingURL=Booking.css.map */

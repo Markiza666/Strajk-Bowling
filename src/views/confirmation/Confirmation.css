@@ -1,0 +1,38 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+}
+.confirmation__details {
+  display: flex;
+  flex-direction: column;
+}
+.confirmation__input {
+  margin-bottom: 1rem;
+}
+.confirmation__price {
+  border: 1px solid #EC315A;
+  border-radius: 4px;
+  padding: 0 0.75rem;
+  display: flex;
+  color: #EC315A;
+  margin-top: 4rem;
+}
+.confirmation__price p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+.confirmation__price p:first-child {
+  font-weight: bold;
+  margin-right: auto;
+}
+.confirmation__button {
+  margin: 1rem 0 2rem 0;
+}
+.confirmation__no-booking {
+  font-family: "Bebas Neue";
+  align-self: center;
+}/*# sourceMappingURL=Confirmation.css.map */

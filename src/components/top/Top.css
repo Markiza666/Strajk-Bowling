@@ -1,0 +1,18 @@
+.top {
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.top__logo {
+  margin: 0 auto;
+  display: block;
+}
+.top__title {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 0.03em;
+  color: #EC315A;
+  margin: 0.5rem 0 1rem 0;
+}/*# sourceMappingURL=Top.css.map */

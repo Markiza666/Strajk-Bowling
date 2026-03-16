@@ -1,0 +1,39 @@
+.shoes {
+  display: flex;
+  flex-direction: column;
+}
+.shoes__heading::before, .shoes__heading::after {
+  content: "";
+  border: 1px solid #441D81;
+  display: inline-block;
+  width: 10.7rem;
+  margin-bottom: 6px;
+}
+.shoes__heading::before {
+  margin-right: 10px;
+}
+.shoes__heading::after {
+  margin-left: 10px;
+}
+.shoes__heading {
+  color: #441D81;
+  text-transform: uppercase;
+}
+.shoes__form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.shoes__button {
+  align-self: center;
+  background-color: #EC315A;
+  border: none;
+  border-radius: 999rem;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.shoes__button--small {
+  font-size: 20px;
+  margin-left: auto;
+}/*# sourceMappingURL=Shoes.css.map */
