@@ -22,8 +22,17 @@ function Confirmation() {
     const state = location.state as LocationState | null;
 
     const savedConfirmation = sessionStorage.getItem("confirmation");
-    const confirmation: ConfirmationDetails | null = 
-        state?.confirmationDetails || (savedConfirmation ? JSON.parse(savedConfirmation) : null);
+
+    let parsedConfirmation: ConfirmationDetails | null = null;
+    if (savedConfirmation && savedConfirmation !== "undefined") {
+        try {
+            parsedConfirmation = JSON.parse(savedConfirmation);
+        } catch (e) {
+            console.error("Failed to parse confirmation data", e);
+        }
+    }
+
+const confirmation: ConfirmationDetails | null = state?.confirmationDetails || parsedConfirmation;
 
     const noop = () => {};
 
