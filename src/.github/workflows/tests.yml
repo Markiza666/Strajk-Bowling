@@ -1,0 +1,33 @@
+name: Strajk Booking Tests
+
+# This tells GitHub to run the script on every push or pull request to main
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Download the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # 3. Install all dependencies (including Vitest and React Testing Library)
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Run the tests in "run" mode (not watch mode)
+      - name: Run tests
+        run: npm test -- --run
+        

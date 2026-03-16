@@ -1,0 +1,8 @@
+.booking {
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+        margin: 4rem 0 0.8rem 0;
+    }
+}

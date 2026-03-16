@@ -1,0 +1,38 @@
+.booking-info__heading::before, .booking-info__heading::after {
+  content: "";
+  border: 1px solid #441D81;
+  display: inline-block;
+  width: 5.8rem;
+  margin-bottom: 6px;
+}
+.booking-info__heading::before {
+  margin-right: 10px;
+}
+.booking-info__heading::after {
+  margin-left: 10px;
+}
+.booking-info__heading {
+  color: #441D81;
+  text-transform: uppercase;
+}
+.booking-info__details {
+  display: flex;
+  flex-direction: column;
+}
+.booking-info__date::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+.booking-info__when {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2.5rem;
+}
+.booking-info__when input:first-child {
+  margin-right: 0.5rem;
+}
+.booking-info__who, .booking-info__lanes {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=BookingInfo.css.map */

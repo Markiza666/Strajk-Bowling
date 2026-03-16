@@ -1,0 +1,17 @@
+@use '../scss/variables' as v;
+
+.button {
+    text-transform: uppercase;
+    background-color: v.$primary-red;
+    color: #fff;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    padding: 1rem 0;
+    border-radius: v.$border-radius;
+}

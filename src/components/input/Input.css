@@ -1,0 +1,31 @@
+.input {
+  position: relative;
+}
+.input__label {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #FFF4F1, #FFF4F1);
+  padding: 0 2px;
+  color: #441D81;
+  position: absolute;
+  top: -6px;
+  left: 1.5rem;
+}
+.input__field {
+  border: 1px solid #441D81;
+  padding: 12px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 100%;
+}/*# sourceMappingURL=Input.css.map */
