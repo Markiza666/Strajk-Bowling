@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# 🎳 Strajk Bowling
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern bowling booking application built with **React**, **TypeScript**, and **Vite**. This project demonstrates a robust implementation of automated testing and CI/CD pipelines.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Dynamic Booking:** Select date, time, and number of lanes.
+- **Player Management:** Add/remove players with individual shoe size validation.
+- **Real-time Feedback:** Comprehensive error handling for incomplete or invalid bookings.
+- **Confirmation Flow:** Seamless transition to booking summary with persistent storage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🧪 Testing Infrastructure
+The core of this project is its reliability. We use a professional-grade testing stack to ensure everything works as expected:
 
-## React Compiler
+- **Vitest**: A high-performance test runner.
+- **React Testing Library**: For testing components through user interactions.
+- **Mock Service Worker (MSW)**: To intercept and mock API network requests, ensuring tests run independently of backend availability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### How to Run Tests
+```bash
+# Run tests in watch mode
+npm test
 
-## Expanding the ESLint configuration
+# Run tests once (CI mode)
+npm test -- --run
+🤖 CI/CD (GitHub Actions)
+This repository is configured with an automated GitHub Actions workflow.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Every time code is pushed to the main or master branch, the CI pipeline installs dependencies and executes the full Vitest suite to prevent regression bugs.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🛠️ Technical Setup (Vite Template)
+This project was bootstrapped with the Vite react-ts template. It provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Expanding the ESLint configuration
+If you are developing a production application, it is recommended to update the configuration to enable type-aware lint rules in eslint.config.js.
