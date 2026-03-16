@@ -10,7 +10,7 @@
         /* Test & JS-support */
         "allowJs": true,
         "checkJs": false,
-        "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"],
+        "types": ["react", "vite/client", "vitest/globals", "@testing-library/jest-dom"],
 
         /* Bundler mode */
         "moduleResolution": "bundler",
