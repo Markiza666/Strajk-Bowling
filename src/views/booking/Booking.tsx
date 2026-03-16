@@ -104,13 +104,13 @@ function Booking() {
         let errorMessage = "";
 
         if (!booking.when || booking.lanes < 1 || !booking.time || booking.people < 1) {
-            errorMessage = "Alla fälten måste vara ifyllda";
+            errorMessage = "All fields must be filled in.";
         } else if (parseInt(booking.people.toString()) !== shoes.length) {
-            errorMessage = "Antalet skor måste stämma överens med antal spelare";
+            errorMessage = "The number of shoes must match the number of players.";
         } else if (!isShoeSizesFilled()) {
-            errorMessage = "Alla skor måste vara ifyllda";
+            errorMessage = "All shoes must be filled in";
         } else if (!checkPlayersAndLanes()) {
-            errorMessage = "Det får max vara 4 spelare per bana";
+            errorMessage = "There can be a maximum of 4 players per course.";
         }
 
         if (errorMessage) {
@@ -149,7 +149,7 @@ function Booking() {
                 shoes={shoes}
             />
             <button className="button booking__button" onClick={book} type="button">
-                strIIIIIike!
+                strIIIIIke!
             </button>
             {error ? <ErrorMessage message={error} /> : ""}
         </section>
