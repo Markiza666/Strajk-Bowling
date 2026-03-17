@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1773748658614" clover="3.2.0">
+  <project timestamp="1773748658614" name="All files">
+    <metrics statements="75" coveredstatements="60" conditionals="42" coveredconditionals="29" methods="31" coveredmethods="23" elements="148" coveredelements="112" complexity="0" loc="75" ncloc="75" packages="10" files="20" classes="20"/>
+    <package name="assets">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="navicon.svg" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\assets\navicon.svg">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="strajk-logo.svg" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\assets\strajk-logo.svg">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.bookingInfo">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="BookingInfo.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\bookingInfo\BookingInfo.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="BookingInfo.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\bookingInfo\BookingInfo.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="12" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.error">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ErrorMessage.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\error\ErrorMessage.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="ErrorMessage.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\error\ErrorMessage.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.input">
+      <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="Input.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\input\Input.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Input.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\input\Input.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="24" count="50" type="stmt"/>
+        <line num="26" count="50" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.navigation">
+      <metrics statements="6" coveredstatements="3" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="1"/>
+      <file name="Navigation.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\navigation\Navigation.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Navigation.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\navigation\Navigation.tsx">
+        <metrics statements="6" coveredstatements="3" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="1"/>
+        <line num="7" count="13" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.shoes">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+      <file name="Shoes.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\shoes\Shoes.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Shoes.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\shoes\Shoes.tsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.top">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Top.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\top\Top.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Top.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\components\top\Top.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="mocks">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="handler.ts" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\mocks\handler.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="server.ts" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\mocks\server.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.booking">
+      <metrics statements="45" coveredstatements="38" conditionals="24" coveredconditionals="17" methods="15" coveredmethods="13"/>
+      <file name="Booking.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\views\booking\Booking.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Booking.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\views\booking\Booking.tsx">
+        <metrics statements="45" coveredstatements="38" conditionals="24" coveredconditionals="17" methods="15" coveredmethods="13"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="42" count="6" type="stmt"/>
+        <line num="43" count="6" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="1" type="cond" truecount="2" falsecount="2"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="75" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+        <line num="96" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="106" count="2" type="cond" truecount="6" falsecount="0"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="108" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="112" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="116" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="118" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="128" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="130" count="1" type="stmt"/>
+        <line num="132" count="1" type="stmt"/>
+        <line num="136" count="0" type="stmt"/>
+        <line num="140" count="12" type="stmt"/>
+      </file>
+    </package>
+    <package name="views.confirmation">
+      <metrics statements="12" coveredstatements="8" conditionals="8" coveredconditionals="6" methods="3" coveredmethods="1"/>
+      <file name="Confirmation.scss" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\views\confirmation\Confirmation.scss">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Confirmation.tsx" path="C:\Users\fire1\OneDrive\Skrivbord\JSutv\Kurser\CI_CD_Deployment\Strajk-Bowling\src\views\confirmation\Confirmation.tsx">
+        <metrics statements="12" coveredstatements="8" conditionals="8" coveredconditionals="6" methods="3" coveredmethods="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
