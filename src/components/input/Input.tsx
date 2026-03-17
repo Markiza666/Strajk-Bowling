@@ -9,6 +9,7 @@ interface InputProps {
     defaultValue?: string | number;
     disabled?: boolean | string;
     maxLength?: number;
+    min?: string;
 }
 
 function Input({
