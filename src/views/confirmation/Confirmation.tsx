@@ -1,5 +1,5 @@
 import "../../views/confirmation/Confirmation.scss";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Top from "../../components/top/Top";
 import Navigation from "../../components/navigation/Navigation";
@@ -9,7 +9,8 @@ interface ConfirmationDetails {
     when: string;
     people: string | number;
     lanes: string | number;
-    bookingId: string;
+    id?: string;
+    bookingId?: string;
     price: string | number;
 }
 
@@ -19,6 +20,7 @@ interface LocationState {
 
 function Confirmation() {
     const location = useLocation();
+    const navigate = useNavigate();
     const state = location.state as LocationState | null;
 
     const savedConfirmation = sessionStorage.getItem("confirmation");
@@ -32,66 +34,79 @@ function Confirmation() {
         }
     }
 
-const confirmation: ConfirmationDetails | null = state?.confirmationDetails || parsedConfirmation;
+    const confirmation: ConfirmationDetails | null = state?.confirmationDetails || parsedConfirmation;
 
     const noop = () => {};
+
+    if (!confirmation || (!confirmation.id && !confirmation.bookingId)) {
+        return (
+            <section className="confirmation">
+                <Navigation />
+                <Top title="See you soon!" />
+                <article className="confirmation__no-booking">
+                    <h2 className="confirmation__message">No booking found!</h2>
+                    <button className="button" onClick={() => navigate('/')} type="button">Go to booking</button>
+                </article>
+            </section>
+        );
+    }
 
     return (
         <section className="confirmation">
             <Navigation />
             <Top title="See you soon!" />
             
-            {confirmation ? (
-                <form className="confirmation__details" onSubmit={(e) => e.preventDefault()}>
-                    <Input
-                        label="When"
-                        type="text"
-                        name="when"
-                        customClass="confirmation__input"
-                        defaultValue={confirmation.when.replace("T", " ")}
-                        disabled={true}
-                        handleChange={noop}
-                    />
-                    <Input
-                        label="Who"
-                        type="text"
-                        name="people"
-                        customClass="confirmation__input"
-                        defaultValue={confirmation.people}
-                        disabled={true}
-                        handleChange={noop}
-                    />
-                    <Input
-                        label="Lanes"
-                        type="text"
-                        name="lanes"
-                        customClass="confirmation__input"
-                        defaultValue={confirmation.lanes}
-                        disabled={true}
-                        handleChange={noop}
-                    />
-                    <Input
-                        label="Booking number"
-                        type="text"
-                        name="bookingId"
-                        customClass="confirmation__input"
-                        defaultValue={confirmation.bookingId}
-                        disabled={true}
-                        handleChange={noop}
-                    />
-                    
-                    <article className="confirmation__price">
-                        <p>Total:</p>
-                        <p>{confirmation.price} sek</p>
-                    </article>
-                    
-                    <button className="button confirmation__button" type="button">
-                        Sweet, let's go!
-                    </button>
-                </form>
-            ) : (
-                <h2 className="confirmation__no-booking">Ingen bokning gjord!</h2>
-            )}
+            <form className="confirmation__details" onSubmit={(e) => e.preventDefault()}>
+                <Input
+                    label="When"
+                    type="text"
+                    name="when"
+                    customClass="confirmation__input"
+                    defaultValue={confirmation.when?.replace("T", " ") || ""}
+                    disabled={true}
+                    handleChange={noop}
+                />
+                <Input
+                    label="Who"
+                    type="text"
+                    name="people"
+                    customClass="confirmation__input"
+                    defaultValue={confirmation.people}
+                    disabled={true}
+                    handleChange={noop}
+                />
+                <Input
+                    label="Lanes"
+                    type="text"
+                    name="lanes"
+                    customClass="confirmation__input"
+                    defaultValue={confirmation.lanes}
+                    disabled={true}
+                    handleChange={noop}
+                />
+                <Input
+                    label="Booking number"
+                    type="text"
+                    name="bookingId"
+                    customClass="confirmation__input"
+                    defaultValue={confirmation.id || confirmation.bookingId}
+                    disabled={true}
+                    handleChange={noop}
+                />
+                
+                <article className="confirmation__price">
+                    <p>Total:</p>
+                    <p>{confirmation.price} sek</p>
+                </article>
+                
+                <button 
+                    className="button confirmation__button" 
+                    type="button" 
+                    onClick={() => navigate('/')}
+                >
+                    Sweet, let's go!
+                </button>
+            </form>
         </section>
     );
 }

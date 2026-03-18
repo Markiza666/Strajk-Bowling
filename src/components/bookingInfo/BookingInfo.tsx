@@ -15,6 +15,7 @@ function BookingInfo({ updateBookingDetails }: BookingInfoProps) {
                 <section className="booking-info__when">
                     <Input
                         label="Date"
+                        min={new Date().toISOString().split("T")[0]}
                         type="date"
                         customClass="booking-info__date"
                         name="when"
