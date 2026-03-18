@@ -145,7 +145,7 @@ function Booking() {
                 state: { confirmationDetails: details },
             });
         } catch {
-            setError("A technical error occurred during booking. Please check your internet connection.");
+            setError("A technical error occurred.");
         }
     }
     

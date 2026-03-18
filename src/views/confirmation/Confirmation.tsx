@@ -44,8 +44,8 @@ function Confirmation() {
                 <Navigation />
                 <Top title="See you soon!" />
                 <article className="confirmation__no-booking">
-                    <h2 className="confirmation__message">Ingen bokning gjord!</h2>
-                    <button className="button" onClick={() => navigate('/')}>Gå till bokning</button>
+                    <h2 className="confirmation__message">No booking found!</h2>
+                    <button className="button" onClick={() => navigate('/')} type="button">Go to booking</button>
                 </article>
             </section>
         );
@@ -89,7 +89,7 @@ function Confirmation() {
                     type="text"
                     name="bookingId"
                     customClass="confirmation__input"
-                    defaultValue={confirmation.id || confirmation.bookingId || ""}
+                    defaultValue={confirmation.id || confirmation.bookingId}
                     disabled={true}
                     handleChange={noop}
                 />
