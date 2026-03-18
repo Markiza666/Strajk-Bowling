@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -105,28 +105,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">85x</span>
+<span class="cline-any cline-yes">85x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">85x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,24 +145,24 @@ function Navigation() {
     const [showMenu, setShowMenu] = useState&lt;boolean&gt;(false);
 &nbsp;
     return (
-        &lt;nav className={`navigation ${showMenu ? <span class="branch-0 cbranch-no" title="branch not covered" >'show-menu' : '</span>'}`}&gt;
+        &lt;nav className={`navigation ${showMenu ? 'show-menu' : ''}`}&gt;
             &lt;img 
                 src={navicon} 
                 className='navigation__icon'
                 alt="Menu icon"
-<span class="fstat-no" title="function not covered" >                onClick={() =&gt; <span class="cstat-no" title="statement not covered" >s</span>etShowMenu(!showMenu)} </span>
+                onClick={() =&gt; setShowMenu(!showMenu)} 
             /&gt;
             &lt;a 
                 href="#" 
-                className={`navigation__link ${showMenu ? <span class="branch-0 cbranch-no" title="branch not covered" >'' : '</span>hide'}`} 
-<span class="fstat-no" title="function not covered" >                onClick={(e</span>) =&gt; { <span class="cstat-no" title="statement not covered" >e.preventDefault(); <span class="cstat-no" title="statement not covered" >n</span>avigate('/'); }}</span>
+                className={`navigation__link ${showMenu ? '' : 'hide'}`} 
+                onClick={(e) =&gt; { e.preventDefault(); navigate('/'); }}
             &gt;
                 Booking
             &lt;/a&gt;
             &lt;a 
                 href="#" 
-                className={`navigation__link ${showMenu ? <span class="branch-0 cbranch-no" title="branch not covered" >'' : '</span>hide'}`} 
-<span class="fstat-no" title="function not covered" >                onClick={(e</span>) =&gt; { <span class="cstat-no" title="statement not covered" >e.preventDefault(); <span class="cstat-no" title="statement not covered" >n</span>avigate('/confirmation'); }}</span>
+                className={`navigation__link ${showMenu ? '' : 'hide'}`} 
+                onClick={(e) =&gt; { e.preventDefault(); navigate('/confirmation'); }}
             &gt;
                 Confirmation
             &lt;/a&gt;
@@ -178,7 +178,7 @@ export default Navigation;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-03-17T11:57:38.502Z
+                at 2026-03-18T12:02:28.094Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
